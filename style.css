@@ -145,8 +145,8 @@ nav a {
 /* TOGGLE DE TEMA */
 .theme-toggle {
   cursor: pointer;
-  width: 7em;
-  height: 3.5em;
+  width: 6em;
+  height: 6em;
   font-size: 16px;
   user-select: none;
   transition: transform 0.2s ease;
@@ -303,4 +303,5 @@ footer {
 
 .dark-mode footer {
   color: #eee; /* Base para tema escuro */
+
 }
