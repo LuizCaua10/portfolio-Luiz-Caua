@@ -179,8 +179,6 @@ nav a {
 .sobre-img img { width: 280px; height: 280px; object-fit: cover; border-radius: 50%; border: 5px solid var(--accent); box-shadow: var(--shadow); transition: transform 0.3s ease; }
 .sobre-img img:hover { transform: scale(1.05); }
 .sobre-text { flex: 1; min-width: 300px; text-align: left; }
-.sobre-text h2 { border: 3px solid var(--accent); border-radius: 10px; padding: 0.8rem 1.5rem; display: inline-block; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(5px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; margin-bottom: 1.5rem; }
-.sobre-text h2:hover { border-color: #ffd43b; transform: scale(1.05); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); }
 .sobre-text p { color: #f8f9fa; font-size: 1.1rem; line-height: 1.9; margin-bottom: 1.5rem; }
 .sobre-text p:first-of-type { font-weight: 600; color: var(--accent); margin-top: 0; }
 
