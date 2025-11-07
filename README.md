@@ -1,56 +1,51 @@
 # 💼 Portfólio | Luiz Cauã
 
 Bem-vindo ao meu portfólio!  
-Este projeto foi desenvolvido para apresentar meus trabalhos, habilidades e experiências como **desenvolvedor front-end em formação**.  
+Este projeto foi criado para apresentar meus trabalhos, habilidades e minha evolução como **desenvolvedor front-end em formação**.  
+
+<div align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="400"/>
+</div>
 
 ---
 
 ## 🧠 Sobre o projeto
-O objetivo deste portfólio é mostrar minha evolução na área de **desenvolvimento web**, reunindo meus principais projetos e informações profissionais em um único lugar.
 
-Ele foi construído com foco em **design limpo, responsivo e fácil navegação**, garantindo uma boa experiência em qualquer dispositivo.
+O objetivo deste portfólio é mostrar minha trajetória e projetos desenvolvidos durante meus estudos em **desenvolvimento web**.  
+Construí o site com foco em **design limpo, usabilidade e responsividade**, para proporcionar uma navegação agradável tanto no desktop quanto no celular.
 
 ---
 
 ## 🛠️ Tecnologias utilizadas
 <div align="left">
-  <img src="https://skillicons.dev/icons?i=html,css,js,vscode,git,github" />
+  <img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" />
 </div>
 
-- **HTML5** → estrutura das páginas  
-- **CSS3** → estilização e responsividade  
-- **JavaScript** → interatividade e dinamismo  
-- **Git & GitHub** → versionamento e hospedagem do projeto  
+- **HTML5** — Estrutura do site  
+- **CSS3** — Estilo e responsividade  
+- **JavaScript** — Interatividade e animações  
+- **Git & GitHub** — Controle de versão e hospedagem  
 
 ---
 
-## 🎨 Funcionalidades e seções
-- 🧍 **Apresentação pessoal** — Quem sou e o que faço  
+## 🎨 Seções do portfólio
+- 🧍 **Apresentação pessoal** — Quem sou e o que busco na área de tecnologia  
 - 💼 **Projetos** — Trabalhos e experimentos desenvolvidos  
-- ⚙️ **Habilidades** — Tecnologias que domino e estou aprendendo  
-- 📫 **Contato** — Formas de me encontrar ou enviar mensagem  
+- ⚙️ **Habilidades** — Tecnologias que domino e estou aprimorando  
+- 📫 **Contato** — Meios para entrar em contato comigo  
 
 ---
 
-## 🚀 Como visualizar o projeto
-Você pode acessar o portfólio direto no navegador através do **GitHub Pages** (ou outro link, se preferir publicar futuramente).
+## 🚀 Visualização do projeto
 
-> 💡 Exemplo:  
-> 🔗 [Acesse meu portfólio aqui](https://LuizCaua10.github.io/portfolio-Luiz-Caua)
+Você pode acessar o portfólio diretamente pelo GitHub Pages (ou outro serviço de hospedagem, caso publique futuramente):
 
-*(Troque o link acima pelo seu quando estiver publicado.)*
-
----
-
-## 📈 O que pretendo adicionar futuramente
-- 🌙 Modo escuro e claro  
-- 🧩 Animações em JavaScript  
-- 📱 Melhorias na responsividade mobile  
-- 🧠 Novos projetos e seções  
+  > 🔗 [Acesse o meu portfólio(https://LuizCaua10.github.io/portfolio-Luiz-Caua)
 
 ---
 
 ## 💬 Autor
+
 **Luiz Cauã**  
 📍 Aracaju/SE  
 📧 [caua.new09@gmail.com](mailto:caua.new09@gmail.com)  
@@ -59,7 +54,9 @@ Você pode acessar o portfólio direto no navegador através do **GitHub Pages**
 ---
 
 <div align="center">
-  
-  🔹 *“Cada linha de código é um passo a mais na minha evolução como desenvolvedor.”* 🔹
-  
+
+  🔹 *“Cada linha de código é um passo a mais na minha evolução como desenvolvedor.”* 🔹  
+  <br>
+  <img src="https://komarev.com/ghpvc/?username=LuizCaua10&color=blue&style=flat-square" alt="profile views"/>
+
 </div>
