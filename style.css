@@ -47,12 +47,13 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  padding-top: 90px;
+  padding-top: 0; /* REMOVIDO O PADDING */
   min-height: 100vh;
 }
 
 main {
   flex: 1;
+  margin-top: 2rem; /* Espaço após o header */
 }
 
 h1, h2, h3 {
@@ -64,7 +65,7 @@ h1, h2, h3 {
   text-align: center;
 }
 
-h1 { font-size: 2.2rem; color: var(--text-dark); }
+h1 { font-size: 2.2rem; }
 h2 { font-size: 2rem; color: var(--accent); }
 h3 { font-size: 1.3rem; color: white; }
 
@@ -86,38 +87,42 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===== HEADER FIXO ===== */
+/* ===== HEADER ESTÁTICO (NÃO FIXO) ===== */
 header.nav-fixa {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  padding: 1.2rem 10%;
+  padding: 1.5rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.98);
   color: var(--text-dark);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: var(--transition);
 }
 
-header.nav-fixa.scrolled {
-  padding: 0.8rem 10%;
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
 .dark-mode header.nav-fixa {
-  background: rgba(30, 30, 30, 0.95);
+  background: rgba(30, 30, 30, 0.98);
   color: #eee;
 }
 
-.dark-mode header.nav-fixa.scrolled {
-  background: rgba(20, 20, 20, 0.98);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+/* GARANTE TEXTO VISÍVEL */
+header h1,
+header nav a {
+  color: #333 !important;
+  transition: color 0.3s ease;
+}
+
+.dark-mode header h1,
+.dark-mode header nav a {
+  color: #eee !important;
+}
+
+header h1 .typed-text,
+header h1 .typed-cursor {
+  color: inherit !important;
 }
 
 nav ul {
@@ -128,14 +133,8 @@ nav ul {
 }
 
 nav a {
-  color: var(--text-dark);
   font-weight: bold;
   transition: color 0.3s ease;
-}
-
-.dark-mode nav a,
-.dark-mode header h1 {
-  color: #eee;
 }
 
 .dark-mode nav a:hover {
@@ -266,15 +265,21 @@ input:focus, textarea:focus { outline: none; border-color: var(--accent); box-sh
 footer { text-align: center; padding: 2rem 10%; font-size: 0.9rem; margin-top: auto; border-top: 1px solid rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.95); color: var(--text-dark); }
 .dark-mode footer { background: rgba(30, 30, 30, 0.95); color: #eee; border-top-color: rgba(255, 255, 255, 0.1); }
 
+/* FOOTER TEXTO VISÍVEL */
+footer p {
+  color: #333 !important;
+}
+.dark-mode footer p {
+  color: #eee !important;
+}
+
 /* TYPED CURSOR */
 .typed-cursor { opacity: 1; animation: blink 0.7s infinite; color: var(--accent); font-weight: bold; }
 @keyframes blink { 50% { opacity: 0; } }
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
-  header.nav-fixa { padding: 1rem 5%; flex-direction: column; gap: 1rem; text-align: center; }
-  header.nav-fixa.scrolled { padding: 0.8rem 5%; }
-  body { padding-top: 140px; }
+  header.nav-fixa { padding: 1.2rem 5%; flex-direction: column; gap: 1rem; text-align: center; }
   .sobre-container { flex-direction: column; text-align: center; }
   .sobre-text h2 { margin: 0 auto 1.5rem; }
   .sobre-img img { width: 200px; height: 200px; }
@@ -284,22 +289,4 @@ footer { text-align: center; padding: 2rem 10%; font-size: 0.9rem; margin-top: a
   .habilidades-container, .projetos-container { grid-template-columns: 1fr; }
   h1 { font-size: 1.8rem; }
   h2 { font-size: 1.7rem; }
-}
-/* CORREÇÃO: Texto do footer sempre visível no tema claro */
-footer p {
-  color: #333 !important; /* Força escuro no tema claro */
-}
-
-.dark-mode footer p {
-  color: #eee !important; /* Mantém claro no tema escuro */
-}
-
-/* Aumenta contraste se necessário (opcional) */
-footer {
-  color: #333; /* Base para tema claro */
-}
-
-.dark-mode footer {
-  color: #eee; /* Base para tema escuro */
-
 }

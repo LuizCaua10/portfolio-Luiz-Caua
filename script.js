@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // === INICIALIZA EMAILJS COM SUA PUBLIC KEY ===
+  // === INICIALIZA EMAILJS ===
   emailjs.init("QmeDwbnnX-cd0FPQr");
 
-  // TYPED COM LOOP INFINITO
+  // TYPED COM LOOP
   const typed = document.querySelector(".typed-text");
   if (typed) {
     new Typed(typed, {
@@ -33,12 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("theme", isDark ? "dark" : "light");
   });
 
-  // HEADER EFEITO ROLAGEM
-  const nav = document.querySelector(".nav-fixa");
-  window.addEventListener("scroll", () => {
-    nav.classList.toggle("scrolled", window.scrollY > 30);
-  });
-
   // BOTÃO VOLTAR AO TOPO
   const backToTop = document.getElementById("back-to-top");
   window.addEventListener("scroll", () => {
@@ -48,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-  // === FORMULÁRIO COM EMAILJS (ENVIA PRO SEU GMAIL) ===
+  // === FORMULÁRIO ===
   const form = document.getElementById("contact-form");
   const message = document.querySelector(".form-message");
 
